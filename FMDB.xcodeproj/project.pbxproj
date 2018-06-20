@@ -15,6 +15,16 @@
 		CF0CB5FD20DA2A60006778D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB5FC20DA2A60006778D6 /* main.m */; };
 		CF0CB60720DA2A60006778D6 /* FMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB60620DA2A60006778D6 /* FMDBTests.m */; };
 		CF0CB61220DA2A60006778D6 /* FMDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB61120DA2A60006778D6 /* FMDBUITests.m */; };
+		CF0CB62220DA2AAF006778D6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB62120DA2AAF006778D6 /* Person.m */; };
+		CF0CB62520DA2B17006778D6 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB62420DA2B17006778D6 /* Car.m */; };
+		CF0CB62820DA2BCF006778D6 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB62720DA2BCF006778D6 /* DataBase.m */; };
+		CF0CB63520DA2C8B006778D6 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB62C20DA2C8A006778D6 /* FMResultSet.m */; };
+		CF0CB63620DA2C8B006778D6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB62D20DA2C8A006778D6 /* FMDatabase.m */; };
+		CF0CB63720DA2C8B006778D6 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB62F20DA2C8A006778D6 /* FMDatabaseAdditions.m */; };
+		CF0CB63820DA2C8B006778D6 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB63020DA2C8A006778D6 /* FMDatabasePool.m */; };
+		CF0CB63920DA2C8B006778D6 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB63320DA2C8B006778D6 /* FMDatabaseQueue.m */; };
+		CF0CB63C20DA4004006778D6 /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB63B20DA4004006778D6 /* CarViewController.m */; };
+		CF0CB63F20DA4336006778D6 /* PersonCarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0CB63E20DA4336006778D6 /* PersonCarsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,27 @@
 		CF0CB60D20DA2A60006778D6 /* FMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0CB61120DA2A60006778D6 /* FMDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBUITests.m; sourceTree = "<group>"; };
 		CF0CB61320DA2A60006778D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0CB62020DA2AAF006778D6 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CF0CB62120DA2AAF006778D6 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CF0CB62320DA2B17006778D6 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		CF0CB62420DA2B17006778D6 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		CF0CB62620DA2BCF006778D6 /* DataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		CF0CB62720DA2BCF006778D6 /* DataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		CF0CB62A20DA2C8A006778D6 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CF0CB62B20DA2C8A006778D6 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CF0CB62C20DA2C8A006778D6 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CF0CB62D20DA2C8A006778D6 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CF0CB62E20DA2C8A006778D6 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CF0CB62F20DA2C8A006778D6 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CF0CB63020DA2C8A006778D6 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CF0CB63120DA2C8B006778D6 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CF0CB63220DA2C8B006778D6 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CF0CB63320DA2C8B006778D6 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CF0CB63420DA2C8B006778D6 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		CF0CB63A20DA4004006778D6 /* CarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarViewController.h; sourceTree = "<group>"; };
+		CF0CB63B20DA4004006778D6 /* CarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarViewController.m; sourceTree = "<group>"; };
+		CF0CB63D20DA4336006778D6 /* PersonCarsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonCarsViewController.h; sourceTree = "<group>"; };
+		CF0CB63E20DA4336006778D6 /* PersonCarsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCarsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +132,15 @@
 		CF0CB5EC20DA2A5B006778D6 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				CF0CB61F20DA2A85006778D6 /* Model */,
 				CF0CB5ED20DA2A5B006778D6 /* AppDelegate.h */,
 				CF0CB5EE20DA2A5B006778D6 /* AppDelegate.m */,
 				CF0CB5F020DA2A5B006778D6 /* ViewController.h */,
 				CF0CB5F120DA2A5C006778D6 /* ViewController.m */,
+				CF0CB63A20DA4004006778D6 /* CarViewController.h */,
+				CF0CB63B20DA4004006778D6 /* CarViewController.m */,
+				CF0CB63D20DA4336006778D6 /* PersonCarsViewController.h */,
+				CF0CB63E20DA4336006778D6 /* PersonCarsViewController.m */,
 				CF0CB5F320DA2A5C006778D6 /* Main.storyboard */,
 				CF0CB5F620DA2A60006778D6 /* Assets.xcassets */,
 				CF0CB5F820DA2A60006778D6 /* LaunchScreen.storyboard */,
@@ -130,6 +166,38 @@
 				CF0CB61320DA2A60006778D6 /* Info.plist */,
 			);
 			path = FMDBUITests;
+			sourceTree = "<group>";
+		};
+		CF0CB61F20DA2A85006778D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF0CB62920DA2C6B006778D6 /* fmdb */,
+				CF0CB62020DA2AAF006778D6 /* Person.h */,
+				CF0CB62120DA2AAF006778D6 /* Person.m */,
+				CF0CB62320DA2B17006778D6 /* Car.h */,
+				CF0CB62420DA2B17006778D6 /* Car.m */,
+				CF0CB62620DA2BCF006778D6 /* DataBase.h */,
+				CF0CB62720DA2BCF006778D6 /* DataBase.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF0CB62920DA2C6B006778D6 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CF0CB62E20DA2C8A006778D6 /* FMDatabase.h */,
+				CF0CB62D20DA2C8A006778D6 /* FMDatabase.m */,
+				CF0CB63120DA2C8B006778D6 /* FMDatabaseAdditions.h */,
+				CF0CB62F20DA2C8A006778D6 /* FMDatabaseAdditions.m */,
+				CF0CB63220DA2C8B006778D6 /* FMDatabasePool.h */,
+				CF0CB63020DA2C8A006778D6 /* FMDatabasePool.m */,
+				CF0CB62B20DA2C8A006778D6 /* FMDatabaseQueue.h */,
+				CF0CB63320DA2C8B006778D6 /* FMDatabaseQueue.m */,
+				CF0CB63420DA2C8B006778D6 /* FMDB.h */,
+				CF0CB62A20DA2C8A006778D6 /* FMResultSet.h */,
+				CF0CB62C20DA2C8A006778D6 /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +330,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0CB62520DA2B17006778D6 /* Car.m in Sources */,
 				CF0CB5F220DA2A5C006778D6 /* ViewController.m in Sources */,
+				CF0CB63520DA2C8B006778D6 /* FMResultSet.m in Sources */,
+				CF0CB63F20DA4336006778D6 /* PersonCarsViewController.m in Sources */,
+				CF0CB62820DA2BCF006778D6 /* DataBase.m in Sources */,
 				CF0CB5FD20DA2A60006778D6 /* main.m in Sources */,
+				CF0CB63720DA2C8B006778D6 /* FMDatabaseAdditions.m in Sources */,
+				CF0CB62220DA2AAF006778D6 /* Person.m in Sources */,
+				CF0CB63C20DA4004006778D6 /* CarViewController.m in Sources */,
+				CF0CB63820DA2C8B006778D6 /* FMDatabasePool.m in Sources */,
+				CF0CB63920DA2C8B006778D6 /* FMDatabaseQueue.m in Sources */,
 				CF0CB5EF20DA2A5B006778D6 /* AppDelegate.m in Sources */,
+				CF0CB63620DA2C8B006778D6 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -434,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = FMDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = FMDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +546,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = FMDBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,6 +565,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = FMDBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

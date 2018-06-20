@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Person;
 
 @interface PersonCarsViewController : UITableViewController
+
+@property(nonatomic,strong) Person *person;
 
 @end

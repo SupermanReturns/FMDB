@@ -7,21 +7,31 @@
 //
 
 #import "PersonCarsViewController.h"
+#import "Person.h"
+#import "Car.h"
+#import "DataBase.h"
 
 @interface PersonCarsViewController ()
+@property(nonatomic,strong) NSMutableArray *carArray;
 
 @end
 
 @implementation PersonCarsViewController
 
+- (NSMutableArray *)carArray{
+    if (!_carArray) {
+        _carArray = [[NSMutableArray alloc] init];
+    }
+    return _carArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = [NSString stringWithFormat:@"%@的所有车",self.person.name];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCar)];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.carArray = [[DataBase sharedDataBase ] getAllCarsFromPerson:self.person];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.tableFooterView = [[UIView alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,26 +40,55 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.carArray.count;
+
 #warning Incomplete implementation, return the number of rows
-    return 0;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"personcarscell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"personcarscell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    Car *car = self.carArray[indexPath.row];
+    cell.textLabel.text = car.brand;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"price: ￥%ld " ,car.price];
     return cell;
 }
-*/
+/**
+ *  设置删除按钮
+ *
+ */
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete){
+        Car *car = self.carArray[indexPath.row];
+        
+        NSLog(@"car.id--%@,own_id--%@",car.car_id,car.own_id);
+        [[DataBase sharedDataBase] deleteCar:car fromPerson:self.person];
+        self.carArray = [[DataBase sharedDataBase] getAllCarsFromPerson:self.person];
+        [self.tableView reloadData];
+    }
+}
+- (void)addCar{
+    NSLog(@"添加车辆");
+    Car *car = [[Car alloc] init];
+    car.own_id = self.person.ID;
+    NSArray *brandArray = [NSArray arrayWithObjects:@"大众",@"宝马",@"奔驰",@"奥迪",@"保时捷",@"兰博基尼", nil];
+    NSInteger index = arc4random_uniform((int)brandArray.count);
+    car.brand = [brandArray objectAtIndex:index];
+    
+    car.price = arc4random_uniform(1000000);
+    
+    [[DataBase sharedDataBase] addCar:car toPerson:self.person];
+    self.carArray = [[DataBase sharedDataBase] getAllCarsFromPerson:self.person];
+    [self.tableView reloadData];
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.
